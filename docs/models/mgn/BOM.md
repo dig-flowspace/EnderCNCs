@@ -1,3 +1,16 @@
+---
+title: Bill of Materials - MGN build
+doc-type: bom
+authored-by: Dan (dig-flowspace)
+compiler: digvoice
+llm-assisted: false
+source: E3CNC / EnderCNCs MGN build documentation
+scope: Belted MGN build, whole machine
+git-first-commit: ccf44c8 "Add Bill of Materials and README for MGN build guide"
+date-created: 2026-08-24
+date-modified: 2026-09-07
+---
+
 # Bill of Materials
 
 This chapter covers the BOM for the **MGN** build of Ender3CNC.
@@ -41,8 +54,20 @@ This chapter covers the BOM for the **MGN** build of Ender3CNC.
 | 1x  | 4040 v-slot         | 300mm                    | Only for Original Ender    |
 -------------------------------------------------------------------------------------
 
+
 ---
 
+## Ready to Proceed?
+
+You are now ready to move on to **Preparing the tool Carriage**.
+
+<p align="center">
+  <a href="/EnderCNCs/models/vwheel/carriage_prep" class="md-button md-button--primary">
+    Continue to Carriage Preparation →
+  </a>
+</p>
+
+Ender 3 Parts Breakdown
 ## Parts Reused from Ender 3 
 
 | Qty | Part Description        | Notes                             |
@@ -76,14 +101,17 @@ This chapter covers the BOM for the **MGN** build of Ender3CNC.
 !!! Tip
     You can re-use 3 limit switches from the Ender 3, if you want to cut them off the PCB's but you'll still be missing 1, so you need to order AT LEAST 1 more, it is probably easier just to buy a new set if you go with this option. The recommendation is to go with the endstop mod.
 
----
-
-## Ready to Proceed?
-
-You are now ready to move on to **Preparing the tool Carriage**.
-
-<p align="center">
-  <a href="/EnderCNCs/models/vwheel/carriage_prep" class="md-button md-button--primary">
-    Continue to Carriage Preparation →
-  </a>
-</p>
+ Adapted for 350MM MGN Rails
+- Adjusted Rail Positioning
+- Shuffled End-stops location to reflect changes made to carriages.
+- Added Addition End-Stop locations for boards that support it.
+- Two threaded nuts per Axis with both 3mm and threaded inset options on all axis.
+- Moved X Axis cable chain to allow for a mounting position on the Y gantry.
+- Measurements were confirmed with data/spec sheets and referenced the original E3CNC CAD for tolerances.
+- Moved Z Axis forward 2mm (to compensate for Z Axis threaded rod connection change, needed extending backwards by 2mm).
+- Updated 52mm and 65mm 3D printed Spindle mounts to match New Z Axis Position.
+- Updated 52MM Spindle clamp mount (for the metal clamp that comes with many 52mm Spindles and spindle kits).
+- Added Subframe support and work holding options (will require extra extrusion. 1x 400mm 4020 cut to length (~360mm) and 2x 300mm 4020 can be left at 300mm).
+- Includes some test 3D prints for spacing and sizing of MGN12 carriages, vertical and horizontal holes, threaded rod connections, and Z carriage rail spacing for the main X extrusion.
+- Added alternative Y/Y1 Gantry pieces that lower the print time by a smidgen.
+- Added alternative front corner blocks for 360MM rails.

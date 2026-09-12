@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" width="780" height="560" role="img" aria-labelledby="title desc">
+  <title id="title">MGN12 rail and carriage, schematic cross-section</title>
+  <desc id="desc">Schematic end-on view of a miniature profile rail guide: the rail, the carriage straddling it, four rows of ball bearings in gothic-arch grooves, and the load directions resisted.</desc>
+
+  <rect x="0" y="0" width="780" height="560" fill="#fbfbf9"/>
+
+  <style>
+    .lbl   { font: 13px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #1b1b1b; }
+    .lbl-b { font: 600 13px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #1b1b1b; }
+    .cap   { font: italic 12px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #555; }
+    .ttl   { font: 600 16px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #1b1b1b; }
+    .lead  { stroke: #777; stroke-width: 1; fill: none; }
+    .load  { stroke: #b03030; stroke-width: 2.5; fill: none; }
+    .loadl { font: 600 12px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill: #b03030; }
+  </style>
+
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b03030"/>
+    </marker>
+    <marker id="dot" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="4" markerHeight="4">
+      <circle cx="3" cy="3" r="2.4" fill="#777"/>
+    </marker>
+  </defs>
+
+  <text class="ttl" x="30" y="36">MGN-type profile rail — schematic cross-section</text>
+  <text class="cap" x="30" y="56">Looking down the axis of travel. Schematic: proportions are illustrative, not dimensioned.</text>
+
+  <!-- ============ CARRIAGE BODY ============ -->
+  <!-- inverted U straddling the rail -->
+  <path d="M 205 250
+           L 425 250
+           Q 433 250 433 258
+           L 433 430
+           L 372 430
+           L 372 300
+           Q 372 292 364 292
+           L 266 292
+           Q 258 292 258 300
+           L 258 430
+           L 197 430
+           L 197 258
+           Q 197 250 205 250 Z"
+        fill="#cfd6dd" stroke="#5d6b78" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- carriage mounting holes (top face) -->
+  <circle cx="240" cy="268" r="7" fill="#fbfbf9" stroke="#5d6b78" stroke-width="1.6"/>
+  <circle cx="390" cy="268" r="7" fill="#fbfbf9" stroke="#5d6b78" stroke-width="1.6"/>
+
+  <!-- ============ RAIL ============ -->
+  <!-- rail profile with a concave groove cut into each flank -->
+  <path d="M 268 430
+           L 268 396
+           C 268 386 284 382 284 372
+           C 284 362 268 358 268 348
+           L 268 306
+           L 362 306
+           L 362 348
+           C 362 358 346 362 346 372
+           C 346 382 362 386 362 396
+           L 362 430 Z"
+        fill="#9aa3ab" stroke="#4a545e" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- rail counterbored mounting hole (centre, seen through) -->
+  <ellipse cx="315" cy="330" rx="13" ry="7" fill="#7d868e" stroke="#4a545e" stroke-width="1.4"/>
+  <ellipse cx="315" cy="330" rx="6.5" ry="3.5" fill="#5f686f" stroke="#4a545e" stroke-width="1"/>
+
+  <!-- mounting surface under the rail -->
+  <rect x="150" y="430" width="330" height="26" fill="#e2ddd2" stroke="#9c9484" stroke-width="1.6"/>
+  <text class="cap" x="316" y="448" text-anchor="middle">mounting surface — the rail inherits its geometry</text>
+
+  <!-- ============ BALLS: four rows, two per flank ============ -->
+  <g>
+    <circle cx="276" cy="350" r="12" fill="#f2f2f0" stroke="#3a3a3a" stroke-width="1.8"/>
+    <circle cx="272" cy="346" r="3.6" fill="#ffffff" opacity="0.95"/>
+    <circle cx="276" cy="394" r="12" fill="#f2f2f0" stroke="#3a3a3a" stroke-width="1.8"/>
+    <circle cx="272" cy="390" r="3.6" fill="#ffffff" opacity="0.95"/>
+    <circle cx="354" cy="350" r="12" fill="#f2f2f0" stroke="#3a3a3a" stroke-width="1.8"/>
+    <circle cx="350" cy="346" r="3.6" fill="#ffffff" opacity="0.95"/>
+    <circle cx="354" cy="394" r="12" fill="#f2f2f0" stroke="#3a3a3a" stroke-width="1.8"/>
+    <circle cx="350" cy="390" r="3.6" fill="#ffffff" opacity="0.95"/>
+  </g>
+
+  <!-- ============ LEADER LABELS ============ -->
+  <path class="lead" marker-end="url(#dot)" d="M 150 250 L 200 253"/>
+  <text class="lbl-b" x="60" y="246">Carriage</text>
+  <text class="lbl" x="60" y="262">(the block)</text>
+
+  <path class="lead" marker-end="url(#dot)" d="M 470 268 L 400 268"/>
+  <text class="lbl" x="476" y="264">M3 mounting</text>
+  <text class="lbl" x="476" y="280">holes</text>
+
+  <path class="lead" marker-end="url(#dot)" d="M 175 350 L 262 350"/>
+  <text class="lbl-b" x="60" y="340">Ball rows</text>
+  <text class="lbl" x="60" y="356">4 rows, 2 per flank</text>
+
+  <path class="lead" marker-end="url(#dot)" d="M 470 330 L 332 330"/>
+  <text class="lbl" x="476" y="326">Counterbored M3</text>
+  <text class="lbl" x="476" y="342">hole, every 25 mm</text>
+
+  <path class="lead" marker-end="url(#dot)" d="M 470 400 L 366 400"/>
+  <text class="lbl-b" x="476" y="396">Rail</text>
+  <text class="lbl" x="476" y="412">hardened, ground</text>
+
+  <!-- ============ LOAD ARROWS ============ -->
+  <g>
+    <line class="load" x1="315" y1="200" x2="315" y2="238" marker-end="url(#ah)"/>
+    <text class="loadl" x="315" y="193" text-anchor="middle">down</text>
+
+    <line class="load" x1="128" y1="300" x2="128" y2="262" marker-end="url(#ah)"/>
+    <text class="loadl" x="128" y="318" text-anchor="middle">up</text>
+
+    <line class="load" x1="520" y1="215" x2="470" y2="215" marker-end="url(#ah)"/>
+    <line class="load" x1="520" y1="215" x2="570" y2="215" marker-end="url(#ah)"/>
+    <text class="loadl" x="520" y="203" text-anchor="middle">side, both ways</text>
+
+    <path class="load" d="M 600 300 A 42 42 0 1 1 642 342" marker-end="url(#ah)"/>
+    <text class="loadl" x="622" y="372" text-anchor="middle">twist (moment)</text>
+  </g>
+  <text class="cap" x="600" y="392" text-anchor="middle">all four resisted by</text>
+  <text class="cap" x="600" y="408" text-anchor="middle">the same four ball rows</text>
+
+  <!-- ============ GOTHIC ARCH DETAIL ============ -->
+  <g transform="translate(96,470)">
+    <rect x="-10" y="-14" width="330" height="76" rx="6" fill="#f3f0e8" stroke="#c9c1ae" stroke-width="1.4"/>
+    <text class="lbl-b" x="0" y="4">Gothic arch:</text>
+    <text class="lbl" x="0" y="22">two arcs, not one circle — so each ball touches</text>
+    <text class="lbl" x="0" y="40">at TWO points, not one. 4 rows × 2 = 8 contact</text>
+    <text class="lbl" x="0" y="58">lines around the block.</text>
+  </g>
+
+  <!-- detail: single ball in gothic groove -->
+  <g transform="translate(478,478)">
+    <path d="M 0 -30 C 14 -22 20 -10 20 0 C 20 10 14 22 0 30" fill="none" stroke="#4a545e" stroke-width="2.5"/>
+    <circle cx="4" cy="0" r="17" fill="#f2f2f0" stroke="#3a3a3a" stroke-width="1.8"/>
+    <circle cx="18.2" cy="-9.4" r="3" fill="#b03030"/>
+    <circle cx="18.2" cy="9.4" r="3" fill="#b03030"/>
+    <text class="cap" x="44" y="-6">two contact</text>
+    <text class="cap" x="44" y="10">points per ball</text>
+  </g>
+</svg>
